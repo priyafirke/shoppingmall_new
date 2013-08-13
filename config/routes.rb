@@ -7,8 +7,9 @@ Shoppingmall::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
-
+   root 'brands#index/show'
+   #GET  'brands/:brand_id/brands/:id(.:format){:action=>"show", :controller=>"brands"}'
+   #match ":id" => 'brands_controller#show'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
