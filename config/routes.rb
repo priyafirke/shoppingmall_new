@@ -1,13 +1,18 @@
 Shoppingmall::Application.routes.draw do
+  
+  #resources :subscriptions
+
   resources :products
 
   resources :brands
+  resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'brands#index/show'
+   root 'brands#index'
+   #resources :subscriptions, :only => [:new, :create]
    #GET  'brands/:brand_id/brands/:id(.:format){:action=>"show", :controller=>"brands"}'
    #match ":id" => 'brands_controller#show'
   # Example of regular route:

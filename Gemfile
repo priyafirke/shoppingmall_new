@@ -7,7 +7,7 @@ gem 'rails', '4.0.0'
 gem 'sqlite3'
 gem 'execjs'
 gem 'therubyracer'
-gem 'rb-readline'
+gem 'rb-readline', '~> 0.4.2'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
